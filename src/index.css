@@ -1,0 +1,106 @@
+:root {
+  --glass-color: rgba(255, 255, 255, 0.6);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --text-color: #212529 !important;
+  --input-bg: rgba(255, 255, 255, 0.7);
+  --input-bg-focus: rgb(255, 255, 255);
+  --input-border: rgba(209, 213, 219, 1);
+}
+.dark-mode {
+  --glass-color: rgba(21, 17, 31, 0.7);
+  --glass-border: 1px solid rgba(60, 48, 92, 0.3);
+  --text-color: #f8f9fa !important;
+  --input-bg: rgba(43, 35, 63, 0.7);
+  --input-bg-focus: rgb(59, 49, 87);
+  --input-border: rgb(60, 48, 92);
+}
+.app input[type="range"] {
+  background: unset;
+}
+.app input {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-color);
+}
+.app input[type="text"]:focus {
+  background-color: var(--input-bg-focus);
+  border-color: var(--input-border);
+  color: var(--text-color);
+}
+.app input[type="number"]:focus {
+  background-color: var(--input-bg-focus);
+  border-color: var(--input-border);
+  color: var(--text-color);
+}
+.app input:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #6c757d;
+}
+.app {
+  background-color: var(--glass-color);
+  height: 100vh;
+  position: relative;
+}
+.app .main {
+  width: 100%;
+  max-width: 570px;
+}
+
+.output-list {
+  max-height: 10rem;
+  overflow: auto;
+}
+.copy-all-btn {
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.copy-all-btn .label {
+  text-align: start;
+  display: inline-block;
+  width: 0px;
+  vertical-align: bottom;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 100ms;
+}
+
+.copy-all-btn:hover .label {
+  width: 4.5em;
+}
+
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  background-color: var(--glass-color);
+  border: var(--glass-border);
+  color: var(--text-color);
+}
+
+.svg-icon {
+  fill: #6c757d;
+}
+.svg-icon:hover {
+  fill: #35393d;
+}
+.dark-mode .svg-icon:hover {
+  fill: #d7d9db;
+}
+
+.output {
+  background-color: var(--input-bg);
+}
+.output .btn {
+  background-color: transparent;
+  color: var(--text-color);
+}
+.output .btn:hover {
+  background-color: var(--input-bg-focus);
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--input-bg-focus);
+}
+input[type="range"]::-moz-range-track {
+  background: var(--input-bg-focus);
+}

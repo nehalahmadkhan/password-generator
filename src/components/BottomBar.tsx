@@ -1,10 +1,11 @@
 import React from "react";
 import GithubIcon from "../assets/icons/github.svg";
+import InstallButton from "../InstallButton";
 
 const BottomBar: React.FC = () => {
   return (
     <footer>
-      <ul className="nav gap-2">
+      <ul className="nav gap-2 align-items-center ">
         <li className="nav-item" title="GitHub">
           <a
             className="nav-link glass p-2 h-100 rounded-pill "
@@ -22,6 +23,9 @@ const BottomBar: React.FC = () => {
           >
             NA
           </a>
+        </li>
+        <li>
+          <InstallButton />
         </li>
       </ul>
     </footer>

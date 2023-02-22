@@ -11,7 +11,7 @@ const LengthControl: React.FC = () => {
   return (
     <div>
       <div className="d-flex justify-content-between">
-        <label htmlFor="length-control">Length</label>
+        <label htmlFor="length-control-input">Length</label>
         <input
           type="number"
           value={length}

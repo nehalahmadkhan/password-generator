@@ -11,7 +11,7 @@ const CountControl: React.FC = () => {
   return advance ? (
     <div>
       <div className="d-flex justify-content-between">
-        <label htmlFor="count-control">Count</label>
+        <label htmlFor="count-control-input">Count</label>
         <input
           type="number"
           value={count}

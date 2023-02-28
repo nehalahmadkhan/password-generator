@@ -1,0 +1,11 @@
+{
+  "name": "Password Generator Advance",
+  "short_name": "Password Generator",
+  "description": "An password generator app with advance features.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "favicon-16x16.png"
+  }
+}

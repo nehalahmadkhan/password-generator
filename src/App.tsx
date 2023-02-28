@@ -20,7 +20,7 @@ function App() {
   return (
     <Generator>
       <main
-        className={`app d-flex flex-column justify-content-center align-items-center px-2 ${
+        className={`app d-flex flex-column justify-content-center align-items-center p-3 gap-3 ${
           darkMode ? "dark-mode" : "light-mode"
         }`}
         style={{
@@ -29,7 +29,7 @@ function App() {
           backgroundSize: "cover",
         }}
       >
-        <div className="main glass p-4 p-md-5 d-flex flex-column gap-2 m-3">
+        <div className="main glass p-4 p-md-5 d-flex flex-column gap-2">
           <Title darkMode={darkMode} setDarkMode={setDarkMode} />
           <LengthControl />
           <CountControl />

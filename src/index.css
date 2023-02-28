@@ -39,7 +39,7 @@
 }
 .app {
   background-color: var(--glass-color);
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 .app .main {

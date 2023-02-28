@@ -1,6 +1,6 @@
 import React from "react";
 import GithubIcon from "../assets/icons/github.svg";
-import InstallButton from "../InstallButton";
+// import InstallButton from "../InstallButton";
 
 const BottomBar: React.FC = () => {
   return (
@@ -24,9 +24,9 @@ const BottomBar: React.FC = () => {
             NA
           </a>
         </li>
-        <li>
+        {/* <li>
           <InstallButton />
-        </li>
+        </li> */}
       </ul>
     </footer>
   );
